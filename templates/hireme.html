@@ -1,0 +1,20 @@
+{% extends 'base.html'%}
+
+{% block head%}
+{% load static%}
+<link rel="stylesheet" href="{% static 'css/hireme.css'%}">
+
+{% endblock head%}
+
+{% block body%}
+<div class="main">
+    <div class="form">
+        <input class="name" type="text" placeholder="Your Name">
+        <input class="email" type="email" placeholder="Your Email Address">
+        <input class="subject" type="text" placeholder="subject">
+        <input class="message" type="text" placeholder="Message">
+        <button>Submit</button>
+    </div>
+    <div class="empty"></div>
+</div>
+{%endblock body%}

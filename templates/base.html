@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+        {% load static %}
+    <link href="{% static 'css/base.css' %}" rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css2?family=Caveat&family=Dancing+Script:wght@700&display=swap"
+          rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+          integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    {% block head%}  {%endblock head%}
+</head>
+<body>
+
+<header id="header">
+    <div id="icon">
+        <img src="{%static 'images/icon.png'%}">
+    </div>
+
+    <div id="navigation_buttons">
+        <h4 id="">About Me</h4>
+        <h4 id="mywork">My Work</h4>
+        <h4 id="hireme">Hire Me</h4>
+    </div>
+
+</header>
+
+{% block body %}
+
+{% endblock%}
+
+<footer id='footer' >
+    <div>
+        <ul id="footer-buttons">
+            <li id="li-1" >My Work</li>
+            <li id="li-2" >LinkedIn</li>
+            <li id="li3" >Hire Me</li>
+        </ul>
+    </div>
+
+    <p>© 2020 Ratna. All rights reserved.
+    <p>
+</footer>
+
+
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+
+<script src="{% static 'js/base.js' %}"></script>
+
+
+</body>
+</html>

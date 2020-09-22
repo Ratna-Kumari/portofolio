@@ -1,0 +1,25 @@
+.form{
+    background : red;
+   display : flex;
+   flex-direction : column;
+   width : 60rem;
+   position : absolute;
+   top : 30rem;
+   left : 50%;
+    transform: translate(-50%, -50%)
+}
+
+.form input{
+    padding : 20px;
+    margin : 30px;
+    outline :  none;
+    border-radius:20px;
+}
+
+.form input:focus{
+    border-color :coral;
+}
+
+#footer{
+    top :85vh !important;
+}

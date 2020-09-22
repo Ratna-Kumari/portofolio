@@ -1,0 +1,82 @@
+body{
+    padding : 0;
+    margin :0;
+    overflow-x : hidden;
+}
+
+#header{
+    z-index:2;
+    position : fixed;
+    top : 0%;
+    left : 0%;
+    height : 12rem;
+    width : 100vw;
+    display : flex;
+    flex-direction	: row;
+    align-items : center
+}
+
+#icon{
+    position : absolute;
+    left : 20%
+}
+
+#icon img{
+    width : 200px;
+}
+
+#navigation_buttons{
+    display : flex;
+    flex-items : row;
+    align-items : center;
+    position : absolute;
+    left : 60%;
+    height : 30px;
+}
+
+#navigation_buttons h4:hover{
+    color: black;
+    cursor : pointer;
+}
+
+
+#navigation_buttons h4{
+    height : 125%;
+    padding-left : 50px;
+    color : #458c8b;
+
+}
+
+#footer{
+    z-index : 10;
+    position: absolute;
+    left: 0;
+    top: 3500px;
+    width : 100vw;
+    height : 150px;
+    background-color: #cee5f0;
+    color: black;
+    text-align: center;
+}
+#footer-buttons{
+    list-style-type : none;
+    display : flex;
+    flex-flow : row;
+    justify-content : center;
+}
+
+#footer-buttons li{
+    color : #458C8B;
+    font: 20px 'Patrick Hand', cursive;
+    margin: 15px 70px 50px 70px;
+}
+
+#footer-buttons li:hover{
+    color: black;
+    cursor : pointer;
+}
+
+#footer h6{
+    font: 15px 'Patrick Hand', cursive;
+    padding:0;
+}

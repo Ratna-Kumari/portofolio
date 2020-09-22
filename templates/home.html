@@ -1,0 +1,53 @@
+{% extends 'base.html'%}
+
+{% block head%}
+{% load static%}
+<link rel="stylesheet" href="{% static 'css/home.css'%}">
+
+{% endblock head%}
+
+{% block body%}
+<div class="home_container">
+    <div class="intro">
+        <h2 class="abs">I am Ratna</h2>
+        <h4 class="abs">Digital Marketer</h4>
+    </div>
+
+    <div class="cards">
+        <div class="card card-1">
+            <img class="abs" src="{%static 'images/icon.png'%}">
+            <div class="abs card-1-cont">
+                <h6>Hi,</h6>
+                <p>I am a Digital Marketer, I take things to
+                    online and promote your product/website.</p>
+            </div>
+        </div>
+
+        <div class="card card-2">
+            <h4>What I do?</h4>
+            <div class="card-2-cont">
+                <img src="{% static 'images/icon.png'%}">
+                <span class="card-2-line"></span>
+                <span class="card-2-carousal"></span>
+                <p>The ability to reach millions, probably billions of user using
+                    just your laptop and some skills is Digital Marketing.</p>
+            </div>
+        </div>
+
+        <div class="card card-3">
+            <h4>How do I do it?</h4>
+            <div class="card-2-cont">
+                <img>
+                <span class="card-2-scroll"></span>
+                <p>There is a lot I do make people know about your product/website.</p>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="contact">
+    </div>
+</div>
+
+<script src="{% static 'js/home.js' %}"></script>
+{%endblock body%}
